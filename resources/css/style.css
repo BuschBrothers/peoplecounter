@@ -1,0 +1,63 @@
+
+.border {
+  border: 1px solid red;
+}
+
+/* GENERICO */
+
+html {
+  font-size: 15px;
+}
+
+body {
+  font-size: 15px;
+}
+
+.active {
+
+}
+
+/* NAV */
+
+.navbar {
+  background-color: black;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: white;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+  color: #B7B7B7;
+}
+
+.navbar-default .navbar-nav>li>a::after {
+  color: white;
+}
+
+/* BANNER */
+
+.jumbotron {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  text-align: center;
+}
+
+.jumbotron-cover {
+  background-image: url("../images/banner.jpg");
+}
+
+.info {
+  margin: 10rem auto;
+}
+
+/* SERVICIOS */
+
+/* CONTACTO */
+
+/* FOOTER */
+
+
+/* MEDIA QUERRY */
