@@ -1,16 +1,19 @@
 
 .border {
-  border: 1px solid red;
+  /* border: 1px solid red; */
+  border: none;
 }
 
 /* GENERICO */
 
 html {
   font-size: 15px;
+  font-family: helvetica;
 }
 
 body {
   font-size: 15px;
+  font-family: helvetica;
 }
 
 .active {
@@ -21,10 +24,31 @@ body {
 
 .navbar {
   background-color: black;
+  border: none;
+}
+
+.navbar .container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar .container #paises {
+  margin: auto auto auto 1rem;
+}
+
+.navbar .container #menu {
+  margin: auto 0 auto auto;
+}
+
+.navbar-default .navbar-nav {
+  display: flex;
+  align-items: center;
 }
 
 .navbar-default .navbar-nav>li>a {
   color: white;
+  margin: 0.5rem auto;
 }
 
 .navbar-default .navbar-nav>li>a:hover {
@@ -35,29 +59,152 @@ body {
   color: white;
 }
 
+.navbar #sing-in {
+  padding: 0.5rem;
+}
+
+#menu #sing-in {
+  text-shadow: none;
+  color: white;
+  background-color: rgba(57, 155, 209, 1);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+}
+
+#menu #sing-in:hover {
+  color: white;
+  background-color: hsla(33, 94%, 52%, 1);
+}
+
+#menu #sing-in:active {
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.5);
+}
+
+/* modal iniciar sesion */
+
+#mail {
+  margin: 2rem;
+}
+
+#pass {
+  margin: 2rem;
+}
+
+
 /* BANNER */
 
 .jumbotron {
+  margin-top: 4.3rem;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   justify-content: center;
   text-align: center;
+  background-color: #1A1A1A;
+  color: white;
 }
 
 .jumbotron-cover {
   background-image: url("../images/banner.jpg");
 }
 
-.info {
-  margin: 10rem auto;
+#banner .info {
+  width: 60%;
+  margin: 8rem auto;
+}
+
+#banner .info a {
+  text-shadow: none;
+  width: 11.4rem;
+  padding: 1.3rem auto;
+  background-color: #399bd1;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+}
+
+#banner .info a:hover {
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.9);
+}
+
+#banner .info a:active {
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.5);
 }
 
 /* SERVICIOS */
 
+#servicios {
+  margin-top: 3rem;
+  width: 100%;
+}
+
+#servicios .icon-color {
+  color: #888888;
+}
+
+#servicios .icon-color:hover {
+  color: #399bd1;
+}
+
+/* EQUIPOS */
+
+#equipos {
+  margin: 3rem auto;
+  background-color: #FAFAFA;
+  display: flex;
+  justify-content: center;
+}
+
+#equipos .info {
+  width: 70%;
+}
+
+#equipos .info img {
+  width: 10rem;
+  height: auto;
+}
+
+/* PLANES */
+
+#planes #light:hover {
+  background-color: hsla(201, 62%, 52%, 0.4);
+  cursor: pointer;
+}
+
+#planes #pro:hover {
+  background-color: hsla(201, 62%, 52%, 0.4);
+  cursor: pointer;
+}
+
+#planes #light-icon {
+  color: green;
+}
+
+#planes #pro-icon {
+  color: blue;
+}
+
+
 /* CONTACTO */
 
+#contacto {
+  background-color: #FAFAFA;
+  display: flex;
+  justify-content: center;
+}
+
+#contacto .info {
+  width: 70%;
+}
+
 /* FOOTER */
+
+footer {
+  background-color: #FAFAFA;
+}
+
+footer .rights {
+  width: 70%;
+  margin: 2rem auto;
+  border-top: 1px solid black;
+}
 
 
 /* MEDIA QUERRY */

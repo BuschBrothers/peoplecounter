@@ -8,45 +8,145 @@
     <!-- generic font -->
     <link href="https://fonts.googleapis.com/css?family=Monoton|Open+Sans:400,600,700" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet"  type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="./resources/css/style.css">
     <!-- carrusel -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
   </head>
   <body>
-    <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <img src="./resources/images/chile_flag.png" class="navbar-brand navbar-left navbar-collapse">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">Servicios</a>
-          <li><a href="#">Equipos</a></li>
-          <li><a href="#">Contacto</a></li>
+    <nav class="navbar navbar-default navbar-fixed-top border">
+      <div class="container border">
+        <ul id="paises" class="navbar-left">
+          <img src="./resources/images/chile_flag.png" class="navbar-brand navbar-collapse">
+        </ul>
+        <ul id="menu" class="nav navbar-nav navbar-right border">
+          <li><a href="#servicios">Servicios</a>
+          <li><a href="#equipos">Equipos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+          <li>
+            <a id="sing-in" class="btn btn-primary btn-md" data-toggle="modal" data-target="#exampleModal">Iniciar sesión</a>
+          </li>
         </ul>
       </div>
     </nav>
-    <div id="banner" class="jumbotron  jumbotron-cover">
-      <div class="info">
-        <h1>GET GOING.</h1>
-        <p>Jumpstart your startup with some crowdsourced seed money, or support
-          one of our 300,000,000+ creators and get rewards.</p>
-        <a href="#" class="btn btn-primary btn-lg">Jump in</a>
+    <div id="banner" class="jumbotron  jumbotron-cover border">
+      <div class="info border">
+        <h1>UNA NUEVA FORMA DE ENTENDER TU NEGOCIO</h1>
+        <p>Conoce cuando entra la gente a tu negocio y planifica con datos reales</p>
+        <a href="#" class="btn btn-primary btn-lg">Registrarse</a>
       </div>
     </div>
-    <div id="servicios" class="">
-
+    <div id="servicios" class="border">
+      <div class="container-fluid">
+        <div id="spec1" class="row border">
+          <div class="col-lg-4 col-xs-12 text-center border">
+            <i class="fa fa-signal fa-3x icon-color" aria-hidden="true"></i>
+            <h2>Conección Wifi</h2>
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+               enim ad minim veniam, quis nostrud exercitation ullamco laboris
+               nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+               in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+               nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+               sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+          </div>
+          <div id="spec2" class="col-lg-4 col-xs-12 text-center border">
+            <i class="fa fa-wrench fa-3x icon-color" aria-hidden="true"></i>
+            <h2>Mantenimiento Equipos</h2>
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+               enim ad minim veniam, quis nostrud exercitation ullamco laboris
+               nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+               in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+               nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+               sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+          </div>
+          <div id="spec3" class="col-lg-4 col-xs-12 text-center border">
+            <i class="fa fa-user fa-3x icon-color" aria-hidden="true"></i>
+            <h2>Control Flujo Clientes</h2>
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+               enim ad minim veniam, quis nostrud exercitation ullamco laboris
+               nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+               in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+               nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+               sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+          </div>
+        </div>
+      </div>
     </div>
-    <div id="contacto" class="">
-
+    <div id="equipos" class="border">
+      <div class="info text-center border">
+        <h1>Equipos</h1>
+        <img src="./resources/images/wearables.png">
+      </div>
     </div>
-    <footer>
-
+    <div id="planes" class="container-fluid border">
+      <div class="row">
+        <div id="light" class="col-lg-4 col-lg-offset-2 text-center">
+          <h2>Plan Light</h2>
+          <i id="light-icon" class="fa fa-leaf fa-3x" aria-hidden="true"></i>
+          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. non proident"</p>
+          <p><strong>Mensualidad: $50.000 CLP</strong></p>
+        </div>
+        <div  id="pro" class="col-lg-4 text-center">
+          <h2>Plan Member</h2>
+          <i id="pro-icon" class="fa fa-diamond fa-3x" aria-hidden="true"></i>
+          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. non proident"</p>
+          <p><strong>Mensualidad: $100.000 CLP</strong></p>
+        </div>
+      </div>
+    </div>
+    <div id="contacto" class="container-fluid border">
+      <div class="row info">
+        <div class="col-lg-6 col-lg-offset-3 text-center border">
+          <h2>Contacto comercial</h2>
+          <h4>atencioncomercial@afav.com</h4>
+        </div>
+      </div>
+    </div>
+    <footer class="container-fluid">
+      <div class="rights">
+        <p>Copyright &copy 2018 Apple Inc. All rights reserved.</p>
+      </div>
     </footer>
-
+    <!-- MODALS -->
+    <!-- iniciar sesion -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title" id="exampleModalLabel" style="display: inline;">Ingresa tu usuario</h3>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div id="mail" class="input-group margin-bottom-sm">
+              <span class="input-group-addon"><i class="fa fa-envelope-o fa-fw"></i></span>
+              <input class="form-control" type="text" placeholder="Email address">
+            </div>
+            <div id="pass" class="input-group">
+              <span class="input-group-addon"><i class="fa fa-key fa-fw"></i></span>
+              <input class="form-control" type="password" placeholder="Password">
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button id="login" type="submit" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- SCRIPTS SECTION -->
       <script
         src="https://code.jquery.com/jquery-3.1.1.min.js"
         integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
         crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
       <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
       <script type="text/javascript" src="./resources/js/main.js"></script>
   </body>
