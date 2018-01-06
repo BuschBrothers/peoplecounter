@@ -27,4 +27,45 @@ $(document).ready(function() {
     console.log('banana');
     document.location.href = './pages/new.html';
   });
+
+  // cambio de color de la hoja plan light
+
+  $('#light').hover(function() {
+    var $old_color = $('#light-icon').css('color');
+    console.log($old_color);
+    var $new_color = [
+                      'coral',
+                      'lightBlue',
+                      $old_color
+                      ];
+    var $index = 0;
+    $('#light-icon').css('color', $new_color[1]);
+    setInterval(function(){
+      $('#light-icon').css('color', $new_color[$index]);
+      $index++;
+
+    }, 1000);
+  }, function() {
+    // la dejo por si se quiere agregar un efecto de salida
+  });
+
+  $('#pro').hover(function() {
+    var $old_color = $('#pro-icon').css('color');
+    console.log($old_color);
+    var $new_color = [
+                      'Crimson ',
+                      'GoldenRod',
+                      $old_color
+                      ];
+    var $index = 0;
+    $('#pro-icon').css('color', $new_color[1]);
+    setInterval(function(){
+      $('#pro-icon').css('color', $new_color[$index]);
+      $index++;
+
+    }, 1000);
+  }, function() {
+    // la dejo por si se quiere agregar un efecto de salida
+  });
+
 });
