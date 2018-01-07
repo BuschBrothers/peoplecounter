@@ -24,9 +24,7 @@
           <li><a href="#servicios">Servicios</a>
           <li><a href="#equipos">Equipos</a></li>
           <li><a href="#contacto">Contacto</a></li>
-          <li>
-            <a id="sing-in" class="btn btn-primary btn-md" data-toggle="modal" data-target="#exampleModal">Iniciar sesión</a>
-          </li>
+          <a id="sing-in" class="btn boton" data-toggle="modal" data-target="#exampleModal">Iniciar sesión</a>
         </ul>
       </div>
     </nav>
@@ -34,7 +32,7 @@
       <div class="info border">
         <h1>UNA NUEVA FORMA DE ENTENDER TU NEGOCIO</h1>
         <p>Conoce cuando entra la gente a tu negocio y planifica con datos reales</p>
-        <a href="./pages/registro.html" class="btn btn-primary btn-lg">Registrarse</a>
+        <!-- <a href="./pages/registro.html" class="btn btn-lg boton">Registrarse</a> -->
       </div>
     </div>
     <div id="servicios" class="border">
@@ -125,18 +123,31 @@
             </button>
           </div>
           <div class="modal-body">
-            <div id="mail" class="input-group margin-bottom-sm">
-              <span class="input-group-addon"><i class="fa fa-envelope-o fa-fw"></i></span>
-              <input class="form-control" type="text" placeholder="Email address">
-            </div>
-            <div id="pass" class="input-group">
-              <span class="input-group-addon"><i class="fa fa-key fa-fw"></i></span>
-              <input class="form-control" type="password" placeholder="Password">
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button id="login" type="submit" class="btn btn-primary">Save changes</button>
+            <form>
+              <div class="form-group">
+                <div id="mail" class="input-group margin-bottom-sm">
+                  <span class="input-group-addon"><i class="fa fa-envelope-o fa-fw"></i></span>
+                  <input class="form-control" type="email" placeholder="Email address">
+                </div>
+              </div>
+              <div class="form-group">
+                <div id="pass" class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-key fa-fw"></i></span>
+                  <input class="form-control" type="password" placeholder="Password">
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-xs-6">
+                  <small id="emailHelpBlock" class="form-text text-muted">
+                    Validar correo electronico <a href="#">Aquí<br /></a>
+                  </small>
+                  <small id="passwordHelpBlock" class="form-text text-muted">
+                    Reiniciar tu contraseña <a href="#">Aquí</a>
+                  </small>
+                </div>
+                <button id="login" type="button" class="col-xs-3 col-xs-offset-2 btn btn-primary">ingresar</button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
