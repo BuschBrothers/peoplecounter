@@ -11,7 +11,7 @@ $(document).ready(function() {
       document.getElementById("main").style.marginLeft = $width;
       hide($("#mySidenav"));
     } else {
-      var $width = "150px";
+      var $width = "200px";
       document.getElementById("mySidenav").style.width = $width;
       document.getElementById("main").style.marginLeft = $width;
       hide($("#mySidenav"));
@@ -21,9 +21,9 @@ $(document).ready(function() {
 });
 
 function hide($side_bar) {
-  var $listItems = $side_bar.find('a');
+  var $listItems = $side_bar.find('a');  // en vez de encontrar "a", debe tomar los hijos
   for (var i = 0; i < $listItems.length; i++) {
-    $($listItems[i]).toggleClass("hide");
+      $($listItems[i]).toggleClass("hide");
   }
 };
 

@@ -7,20 +7,70 @@ body {
 /* The side navigation menu */
 .sidenav {
   height: 100%; /* 100% Full-height */
-  width: 150px; /* 0 width - change this with JavaScript */
+  width: 200px; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */
   z-index: 100; /* Stay on top */
   top: 0; /* Stay at the top */
   left: 0;
-  background-color: #111; /* Black*/
+  background-color: #303946;
   overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 60px; /* Place content 60px from the top */
+  padding-top: 0px; /* Place content 60px from the top */
   transition: 0.2s; /* 0.5 second transition effect to slide in the sidenav */
 }
 
 .sidenav>.hide {
   display: none;
 }
+
+.sidenav #brand {
+  box-shadow: 0 0.5px 0.5px gray;
+  padding: 4.5px;
+}
+
+.sidenav h5 {
+  color: white;
+  width: 100%;
+  padding: 5px;
+  margin: 0;
+  background-color: #455264;
+  font-weight: lighter;
+  font-size: 0.8rem;
+}
+
+.sidenav>.profile {
+  margin: 10px auto;
+}
+
+.sidenav>.profile>.row>img {
+  border-radius: 8%;
+  width: 60px;
+  padding: 0;
+  size: cover;
+  margin-left: 10px;
+
+}
+
+.sidenav>.profile>.row>.info {
+  padding: 0;
+  margin: 0;
+}
+
+.sidenav>.profile>.row>.info>span {
+  font-size: 0.8rem;
+  float: left;
+  color: white;
+  margin: 8px;
+  padding: 0;
+  display: block;
+}
+
+.sidenav>.profile>.row>.info>.dropdown>.personal-menu {
+  float: left;
+  margin-left: 8px;
+  padding: 2px;
+}
+
+
 
 /* The navigation menu links */
 .sidenav a {
@@ -29,7 +79,7 @@ body {
   margin: 0 auto;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: #8b929a;
   display: block;
   /* transition: 0.2s; */
 }
@@ -50,8 +100,8 @@ body {
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
-  width: 100% - 150px;
-  margin-left: 150px;
+  width: 100% - 200px;
+  margin-left: 200px;
   transition: margin-left .25s;
   color: black;
 }
@@ -66,12 +116,18 @@ body {
 
 .nav-pills {
   border-bottom: 1px solid grey;
+  box-shadow: 0 0.5px 0.5px gray;
 }
 
 .nav-pills>ul>li>a {
   color: black;
   padding: 0.8rem 1.2rem;
 }
+
+.nav-pills>ul>li>a>.icon-nav {
+  height: 2rem;
+}
+
 
 /* MAIN CONTENT */
 
