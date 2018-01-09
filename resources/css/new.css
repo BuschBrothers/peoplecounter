@@ -25,16 +25,20 @@ body {
 .sidenav #brand {
   box-shadow: 0 0.5px 0.5px gray;
   padding: 4.5px;
+  font-size: 25px;
+  margin: 0;
 }
 
 .sidenav h5 {
   color: white;
   width: 100%;
-  padding: 5px;
+  padding: 7px;
+  padding-left: 14px;
   margin: 0;
   background-color: #455264;
   font-weight: lighter;
-  font-size: 0.8rem;
+  font-size: 13px;
+  letter-spacing: 0.5px;
 }
 
 .sidenav>.profile {
@@ -70,23 +74,40 @@ body {
   padding: 2px;
 }
 
+.sidenav>.profile>.row>.info>.dropdown>ul {
+  margin-top: 60px;
+  margin-left: -35px;
+}
 
+.sidenav>.profile>.row>.info>.dropdown>ul>li>a {
+  font-size: 13px;
+}
 
 /* The navigation menu links */
+
 .sidenav a {
   text-align: center;
   padding: 5px;
+  padding-left: 15px;
   margin: 0 auto;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 15px;
+  font-weight: lighter;
+  letter-spacing: 0.5px;
   color: #8b929a;
   display: block;
+  text-align: left;
   /* transition: 0.2s; */
 }
 
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
   color: #f1f1f1;
+  background-color: #272f3a;
+}
+
+.sidenav>a>span {
+  margin-left: 10px;
 }
 
 /* Position and style the close button (top right corner) */
