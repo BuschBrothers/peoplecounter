@@ -21,6 +21,8 @@ $(document).ready(function() {
 });
 
 function hide($side_bar) {
+  $side_bar.find('h5').toggleClass("hide");
+  $side_bar.find('.profile').toggleClass("hide");
   var $listItems = $side_bar.find('a');  // en vez de encontrar "a", debe tomar los hijos
   for (var i = 0; i < $listItems.length; i++) {
       $($listItems[i]).toggleClass("hide");
